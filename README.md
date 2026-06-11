@@ -1,6 +1,6 @@
 # Entekhabi Group Website
 
-Static academic lab website built with [Astro](https://astro.build/). Content is managed via Markdown files — no backend or database required.
+Static academic lab website built with [Astro](https://astro.build/). Content is managed via Markdown and YAML — no backend or database required.
 
 ## Local development
 
@@ -15,8 +15,7 @@ Open [http://localhost:4321](http://localhost:4321) to preview the site.
 
 **Only edit these folders** (unless noted):
 
-- `src/content/` — page content (Markdown)
-- `src/data/publications.yaml` — manual publications
+- `src/content/` — page content (Markdown + YAML for people and manual publications)
 - `public/images/` — photos and figures
 
 Put images in `public/images/` and reference them as `/images/your-file.jpg`.
@@ -52,19 +51,17 @@ Newest items appear first.
 
 ### People (`/people`)
 
-Add a file in `src/content/people/` (e.g. `jane-doe.md`). One file per person.
+Edit [`src/content/people.yaml`](src/content/people.yaml) on GitHub (pencil icon) and append a new block. **Indentation matters** — use 2 spaces per level.
 
 ```yaml
----
-name: Jane Doe
-role: phd                        # pi | postdoc | phd | masters | undergrad | staff | associated | alumni
-photo: /images/people/jane.jpg
-email: jane@example.edu          # optional
-website: https://example.edu/~jane   # optional
-order: 1
----
-
-Short bio in markdown.
+jane-doe:
+  name: Jane Doe
+  role: phd                        # pi | postdoc | phd | masters | undergrad | staff | associated | alumni
+  photo: /images/people/jane.jpg
+  email: jane@example.edu          # optional
+  website: https://example.edu/~jane   # optional
+  order: 1
+  bio: Short bio as plain text.    # optional
 ```
 
 **How people are grouped on the page:**
@@ -102,10 +99,10 @@ Description of this research area.
 |---|---|
 | Refresh the list | Run `npm run fetch-publications` (also runs monthly via GitHub Actions) |
 | Hide a paper | Add its DOI to `scripts/exclusions.json` |
-| Add a paper manually | Append an entry to `src/data/publications.yaml` |
+| Add a paper manually | Append an entry to `src/content/publications.yaml` |
 | Add PDF or code link | Add a manual entry with the same `doi` — it merges with the OpenAlex entry |
 
-Edit [`src/data/publications.yaml`](src/data/publications.yaml) on GitHub (pencil icon). **Indentation matters** — use 2 spaces per level.
+Edit [`src/content/publications.yaml`](src/content/publications.yaml) on GitHub (pencil icon). **Indentation matters** — use 2 spaces per level.
 
 ```yaml
 example-paper:
@@ -171,8 +168,8 @@ For a custom domain, configure it under **Settings → Pages → Custom domain**
 
 ```
 src/
-  content/          # Markdown: news, people, research, openings
-  data/             # publications.yaml + publications.json (OpenAlex)
+  content/          # Markdown (news, research, openings) + YAML (people, publications)
+  data/             # publications.json only (auto-fetched from OpenAlex)
   content.config.ts # Content schemas (do not edit unless adding fields)
   layouts/          # Page shell
   pages/            # Routes

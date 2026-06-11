@@ -23,7 +23,7 @@ const news = defineCollection({
 });
 
 const people = defineCollection({
-	loader: glob({ pattern: '**/*.md', base: './src/content/people' }),
+	loader: file('./src/content/people.yaml'),
 	schema: z
 		.object({
 			name: z.string(),
@@ -32,12 +32,13 @@ const people = defineCollection({
 			email: z.string().optional(),
 			website: z.string().optional(),
 			order: z.number(),
+			bio: z.string().optional(),
 		})
 		.strict(),
 });
 
 const publications = defineCollection({
-	loader: file('./src/data/publications.yaml'),
+	loader: file('./src/content/publications.yaml'),
 	schema: z
 		.object({
 			title: z.string(),

@@ -2,8 +2,7 @@
 
 Non-coders should edit content in:
 
-- `src/content/` — news, people, research, and openings (Markdown)
-- `src/data/publications.yaml` — manual publications
+- `src/content/` — news, research, and openings (Markdown); people and manual publications (YAML)
 - `public/images/` — photos and figures
 
 Do not change files outside those folders unless you know what you are doing.
@@ -30,23 +29,23 @@ image: /images/news-example.jpg
 Your news text here. Markdown is supported.
 ```
 
-## People (`src/content/people/`)
+## People (`src/content/people.yaml`)
 
-Create a new `.md` file per person (e.g. `jane-doe.md`). On GitHub, click **Add file → Create new file** and enter the path `src/content/people/jane-doe.md`.
+Edit [`src/content/people.yaml`](src/content/people.yaml) on GitHub: open the file, click the pencil icon, and append a new entry at the bottom.
 
-The markdown body below the frontmatter is the person's bio.
+**Indentation matters in YAML.** Use two spaces per level. Do not use tabs.
+
+Each person is one block. The top-level key is a unique ID (lowercase, hyphens, e.g. `jane-doe`):
 
 ```yaml
----
-name: Jane Doe
-role: phd
-photo: /images/people/jane.jpg
-email: jane@example.edu
-website: https://example.edu/~jane
-order: 1
----
-
-Short bio in markdown.
+jane-doe:
+  name: Jane Doe
+  role: phd
+  photo: /images/people/jane.jpg
+  email: jane@example.edu
+  website: https://example.edu/~jane
+  order: 1
+  bio: Short bio as plain text.
 ```
 
 | Field | Type | Required |
@@ -57,6 +56,7 @@ Short bio in markdown.
 | `email` | string | no |
 | `website` | string (URL) | no |
 | `order` | number | yes |
+| `bio` | string (plain text) | no |
 
 Members and alumni are sorted alphabetically by last name on the site.
 
@@ -64,7 +64,7 @@ Members and alumni are sorted alphabetically by last name on the site.
 
 Most publications load automatically from OpenAlex (`src/data/publications.json`). To exclude a DOI, add it to [`scripts/exclusions.json`](scripts/exclusions.json).
 
-**Manual publications** go in [`src/data/publications.yaml`](src/data/publications.yaml). Edit on GitHub with the pencil icon and append a new block:
+**Manual publications** go in [`src/content/publications.yaml`](src/content/publications.yaml). Edit on GitHub with the pencil icon and append a new block:
 
 ```yaml
 example-paper:
