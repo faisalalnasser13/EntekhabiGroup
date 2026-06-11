@@ -1,6 +1,6 @@
 ---
-title: "Accounting for map errors in environmental statistics"
-date: 2025-09-01
+title: "Congratulations to Bowen Wang"
+date: 2025-10-05
 ---
 
-New paper in *Remote Sensing of Environment*! Our study tackles a common issue in environmental research: scientists use satellite-derived maps in statistical models, but errors in these maps can lead to biased results. Using Prediction Powered Inference (PPI), we show how to account for these errors so estimates remain unbiased.
+Congratulations to Bowen Wang on passing his PhD general exam! Bowen presented his proposed research on land–atmosphere interactions and soil moisture dynamics to the committee and is now officially a PhD candidate. Well deserved — and well celebrated with tea.

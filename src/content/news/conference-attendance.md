@@ -1,7 +1,7 @@
 ---
-title: "Living Planet Symposium 2025"
-date: 2025-06-20
+title: "AGU Fall Meeting 2025"
+date: 2025-12-15
 image: /images/news-conference.svg
 ---
 
-Several members of our lab attended the Living Planet Symposium in Vienna! We presented work on scalable ground truthing for crop type mapping, multi-modal weather forecasting, an EO dataset for foundation model training, and more.
+Several members of our lab attended the AGU Fall Meeting in New Orleans! We presented work on soil moisture assimilation, scalable ground truthing for crop type mapping, multi-modal weather forecasting, and EO datasets for foundation model training. Faisal AlNasser gave an oral presentation on satellite–model fusion for hydrologic applications, and the group connected with collaborators across hydrology, remote sensing, and climate science.
