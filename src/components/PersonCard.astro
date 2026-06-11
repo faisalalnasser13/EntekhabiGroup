@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { render } from 'astro:content';
 import { ROLE_LABELS } from '../utils/people';
 import { assetUrl } from '../utils/url';
 
@@ -9,8 +8,7 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
-const { name, role, photo, email, website } = entry.data;
+const { name, role, photo, email, website, bio } = entry.data;
 ---
 
 <article class="person-card">
@@ -29,7 +27,5 @@ const { name, role, photo, email, website } = entry.data;
 			</div>
 		)
 	}
-	<div class="person-bio">
-		<Content />
-	</div>
+	{bio && <p class="person-bio">{bio}</p>}
 </article>

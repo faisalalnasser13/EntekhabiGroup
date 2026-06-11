@@ -1,0 +1,20 @@
+crop-mapping:
+  title: Region-invariant features for global crop type mapping
+  authors: X. Tong, D. Entekhabi, et al.
+  venue: ISPRS Journal of Photogrammetry and Remote Sensing
+  year: 2025
+  pdf: https://example.com/crop-mapping.pdf
+ppi-remote-sensing:
+  title: Prediction-powered inference for satellite-derived environmental maps
+  authors: K. Lu, D. Entekhabi, et al.
+  venue: Remote Sensing of Environment
+  year: 2025
+  pdf: https://example.com/ppi-paper.pdf
+  code: https://github.com/example/ppi-rs
+smap-assimilation:
+  title: Soil moisture assimilation in land surface models
+  authors: D. Entekhabi, A. Chen, et al.
+  venue: Water Resources Research
+  year: 2023
+  pdf: https://example.com/smap-paper.pdf
+  code: https://github.com/example/smap-assim

@@ -15,15 +15,13 @@ Build a static academic lab website. Reference for tone/structure: https://earth
 - **Publications:** grouped by year, descending. Show title, authors, venue, and PDF/code links when present.
 - **Research / Openings:** render from their collections.
 
-## Content collections (src/content/)
+## Content collections
 Use Astro content collections with Zod schemas. Schemas MUST match CONTRIBUTING.md exactly:
-- `news`: title (string), date (date), image (string, optional) + markdown body
-- `people`: name, role (enum: pi|postdoc|phd|masters|undergrad|staff|associated|alumni), photo, email?, website?, order (number) + body
-- `publications`: title, authors, venue, year (number), pdf?, code?
-- `research`: title, image?, order? + body
+- `news` (markdown in `src/content/news/`): title (string), date (date), image (string, optional) + markdown body
+- `people` (yaml in `src/data/people.yaml`): name, role (enum), photo, email?, website?, order (number), bio? (plain string)
+- `publications` (yaml in `src/data/publications.yaml` + OpenAlex json): title, authors, venue, year (number), doi?, pdf?, code?
+- `research` (markdown in `src/content/research/`): title, image?, order? + body
 - `openings`: single openings.md
 
-Create 2–3 placeholder entries per collection.
-
 ## Rules
-- Non-coders edit only `src/content/` and `public/images/`. Keep all logic out of those folders.
+- Non-coders edit `src/content/`, `src/data/people.yaml`, `src/data/publications.yaml`, and `public/images/`. Keep all logic out of those folders.

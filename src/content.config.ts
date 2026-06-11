@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const personRole = z.enum([
@@ -23,28 +23,33 @@ const news = defineCollection({
 });
 
 const people = defineCollection({
-	loader: glob({ pattern: '**/*.md', base: './src/content/people' }),
-	schema: z.object({
-		name: z.string(),
-		role: personRole,
-		photo: z.string(),
-		email: z.string().optional(),
-		website: z.string().optional(),
-		order: z.number(),
-	}),
+	loader: file('./src/data/people.yaml'),
+	schema: z
+		.object({
+			name: z.string(),
+			role: personRole,
+			photo: z.string(),
+			email: z.string().optional(),
+			website: z.string().optional(),
+			order: z.number(),
+			bio: z.string().optional(),
+		})
+		.strict(),
 });
 
 const publications = defineCollection({
-	loader: glob({ pattern: '**/*.md', base: './src/content/publications' }),
-	schema: z.object({
-		title: z.string(),
-		authors: z.string(),
-		venue: z.string(),
-		year: z.number(),
-		doi: z.string().optional(),
-		pdf: z.string().optional(),
-		code: z.string().optional(),
-	}),
+	loader: file('./src/data/publications.yaml'),
+	schema: z
+		.object({
+			title: z.string(),
+			authors: z.string(),
+			venue: z.string(),
+			year: z.number(),
+			doi: z.string().optional(),
+			pdf: z.string().optional(),
+			code: z.string().optional(),
+		})
+		.strict(),
 });
 
 const research = defineCollection({

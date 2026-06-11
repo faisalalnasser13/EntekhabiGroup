@@ -16,6 +16,7 @@ Open [http://localhost:4321](http://localhost:4321) to preview the site.
 **Only edit these folders** (unless noted):
 
 - `src/content/` — page content (Markdown)
+- `src/data/people.yaml` and `src/data/publications.yaml` — people and manual publications
 - `public/images/` — photos and figures
 
 Put images in `public/images/` and reference them as `/images/your-file.jpg`.
@@ -51,19 +52,17 @@ Newest items appear first.
 
 ### People (`/people`)
 
-Add or edit files in `src/content/people/`. One file per person.
+Edit [`src/data/people.yaml`](src/data/people.yaml) on GitHub (pencil icon) and append a new block. **Indentation matters** — use 2 spaces per level.
 
 ```yaml
----
-name: Jane Doe
-role: phd                        # pi | postdoc | phd | masters | undergrad | staff | associated | alumni
-photo: /images/people/jane.jpg
-email: jane@example.edu          # optional
-website: https://example.edu/~jane   # optional
-order: 1                         # unused for display; members/alumni sort by last name
----
-
-Short bio in markdown.
+jane-doe:
+  name: Jane Doe
+  role: phd                        # pi | postdoc | phd | masters | undergrad | staff | associated | alumni
+  photo: /images/people/jane.jpg
+  email: jane@example.edu          # optional
+  website: https://example.edu/~jane   # optional
+  order: 1
+  bio: Short bio as plain text.    # optional
 ```
 
 **How people are grouped on the page:**
@@ -101,21 +100,20 @@ Description of this research area.
 |---|---|
 | Refresh the list | Run `npm run fetch-publications` (also runs monthly via GitHub Actions) |
 | Hide a paper | Add its DOI to `scripts/exclusions.json` |
-| Add a paper manually | Create a file in `src/content/publications/` |
+| Add a paper manually | Append an entry to `src/data/publications.yaml` |
 | Add PDF or code link | Add a manual entry with the same `doi` — it merges with the OpenAlex entry |
 
-Manual publication example:
+Edit [`src/data/publications.yaml`](src/data/publications.yaml) on GitHub (pencil icon). **Indentation matters** — use 2 spaces per level.
 
 ```yaml
----
-title: "Example Paper Title"
-authors: "A. Author, B. Author"
-venue: "Journal of Examples"
-year: 2025
-doi: 10.1234/example             # optional, used for deduplication
-pdf: https://example.com/paper.pdf   # optional
-code: https://github.com/example/repo   # optional
----
+example-paper:
+  title: Example Paper Title
+  authors: A. Author, B. Author
+  venue: Journal of Examples
+  year: 2025
+  doi: 10.1234/example             # optional, used for deduplication
+  pdf: https://example.com/paper.pdf   # optional
+  code: https://github.com/example/repo   # optional
 ```
 
 ---
@@ -171,7 +169,8 @@ For a custom domain, configure it under **Settings → Pages → Custom domain**
 
 ```
 src/
-  content/          # Markdown content (edit here)
+  content/          # Markdown: news, research, openings
+  data/             # YAML: people.yaml, publications.yaml (+ publications.json from OpenAlex)
   content.config.ts # Content schemas (do not edit unless adding fields)
   layouts/          # Page shell
   pages/            # Routes

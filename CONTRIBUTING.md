@@ -1,6 +1,12 @@
 # Contributing Content
 
-Non-coders should edit only files in `src/content/` and images in `public/images/`. Do not change files outside those folders.
+Non-coders should edit content in:
+
+- `src/content/` — news, research, and openings (Markdown)
+- `src/data/people.yaml` and `src/data/publications.yaml` — people and manual publications
+- `public/images/` — photos and figures
+
+Do not change files outside those folders unless you know what you are doing.
 
 ## News (`src/content/news/`)
 
@@ -24,9 +30,24 @@ image: /images/news-example.jpg
 Your news text here. Markdown is supported.
 ```
 
-## People (`src/content/people/`)
+## People (`src/data/people.yaml`)
 
-Create a new `.md` file per person.
+Edit [`src/data/people.yaml`](src/data/people.yaml) on GitHub: open the file, click the pencil icon, and append a new entry at the bottom.
+
+**Indentation matters in YAML.** Use two spaces per level. Do not use tabs.
+
+Each person is one block. The top-level key is a unique ID (lowercase, hyphens, e.g. `jane-doe`):
+
+```yaml
+jane-doe:
+  name: Jane Doe
+  role: phd
+  photo: /images/people/jane.jpg
+  email: jane@example.edu
+  website: https://example.edu/~jane
+  order: 1
+  bio: Short bio as plain text.
+```
 
 | Field | Type | Required |
 |---|---|---|
@@ -35,28 +56,27 @@ Create a new `.md` file per person.
 | `photo` | string (path under `public/`) | yes |
 | `email` | string | no |
 | `website` | string (URL) | no |
-| `order` | number | yes (legacy field; members and alumni are sorted alphabetically by last name on the site) |
+| `order` | number | yes |
+| `bio` | string (plain text) | no |
 
-The markdown body is the person's bio.
-
-```yaml
----
-name: Jane Doe
-role: phd
-photo: /images/people/jane.jpg
-email: jane@example.edu
-website: https://example.edu/~jane
-order: 1
----
-
-Short bio in markdown.
-```
+Members and alumni are sorted alphabetically by last name on the site.
 
 ## Publications
 
-Most publications are fetched automatically from OpenAlex (see `src/data/publications.json`). To exclude a DOI from the automated list, add it to [`scripts/exclusions.json`](scripts/exclusions.json).
+Most publications load automatically from OpenAlex (`src/data/publications.json`). To exclude a DOI, add it to [`scripts/exclusions.json`](scripts/exclusions.json).
 
-Manual entries can still be added in `src/content/publications/` and are merged with the OpenAlex list (matching by DOI when present).
+**Manual publications** go in [`src/data/publications.yaml`](src/data/publications.yaml). Edit on GitHub with the pencil icon and append a new block:
+
+```yaml
+example-paper:
+  title: Example Paper Title
+  authors: A. Author, B. Author
+  venue: Journal of Examples
+  year: 2025
+  doi: 10.1234/example
+  pdf: https://example.com/paper.pdf
+  code: https://github.com/example/repo
+```
 
 | Field | Type | Required |
 |---|---|---|
@@ -68,17 +88,9 @@ Manual entries can still be added in `src/content/publications/` and are merged 
 | `pdf` | string (URL) | no |
 | `code` | string (URL) | no |
 
-```yaml
----
-title: "Example Paper Title"
-authors: "A. Author, B. Author"
-venue: "Journal of Examples"
-year: 2025
-doi: 10.1234/example
-pdf: https://example.com/paper.pdf
-code: https://github.com/example/repo
----
-```
+**Indentation matters in YAML.** Use two spaces per level. The top-level key is a unique ID (e.g. `example-paper`).
+
+Manual entries merge with the OpenAlex list (matched by DOI when present).
 
 ## Research (`src/content/research/`)
 
