@@ -20,15 +20,15 @@ bowen:
   email: bowenw@mit.edu
   website: https://example.edu/~jane
   order: 1
-  bio: Bowen is a PhD student in CEE.
+  bio: Bowen is a PhD student in CEE and like tea
 bryn:
   name: Bryn E Morgan
   role: postdoc
   photo: /images/people/jane.jpg
-  email: jane@example.edu
+  email: bryn@example.edu
   website: https://example.edu/~jane
   order: 1
-  bio: Bryn likes plants
+  bio: Bryn is a Postdoc and likes plants
 carlos-mendez:
   name: Carlos Mendez
   role: alumni
@@ -72,7 +72,7 @@ gianotti:
   email: jane@example.edu
   website: https://example.edu/~jane
   order: 1
-  bio: Dan is great
+  bio: Dan is a great Research Scientist
 hannah-brooks:
   name: Hannah Brooks
   role: alumni
@@ -108,13 +108,6 @@ mei-lin:
   email: meilin@example.edu
   order: 3
   bio: Lab manager coordinating field operations, computing resources, and project logistics.
-morgan-park:
-  name: Morgan Park
-  role: phd
-  photo: /images/person-phd.svg
-  email: morgan@example.edu
-  order: 6
-  bio: PhD student building machine learning emulators for hydrologic forecasting and uncertainty quantification.
 mzhang:
   name: Michelle Zhang
   role: phd
@@ -123,20 +116,6 @@ mzhang:
   website: https://example.edu/~jane
   order: 1
   bio: Michelle is a PhD student in CEE.
-nina-patel:
-  name: Nina Patel
-  role: alumni
-  photo: /images/person-alumni.svg
-  website: https://example.edu/~npatel
-  order: 2
-  bio: PhD alumna (2023). Now a data scientist applying remote sensing to urban heat island studies.
-priya-mehta:
-  name: Priya Mehta
-  role: masters
-  photo: /images/person-phd.svg
-  email: priya@example.edu
-  order: 4
-  bio: Master's student working on drought monitoring with multi-sensor remote sensing products.
 reguyal:
   name: Victoria Reguyal
   role: undergrad
@@ -152,13 +131,6 @@ robert-kim:
   website: https://example.edu/~rkim
   order: 4
   bio: Visiting scientist studying multi-modal weather forecasting with satellite and reanalysis data.
-sam-rivera:
-  name: Sam Rivera
-  role: phd
-  photo: /images/person-phd.svg
-  email: sam@example.edu
-  order: 3
-  bio: PhD student studying land-atmosphere coupling and soil moisture dynamics using SMAP and model assimilation.
 sarah-ibrahim:
   name: Sarah Ibrahim
   role: staff
@@ -173,10 +145,3 @@ tom-walsh:
   website: https://example.edu/~twalsh
   order: 6
   bio: External collaborator on scalable ground truthing methods for agricultural remote sensing.
-xinyi-tong:
-  name: Xin-Yi Tong
-  role: postdoc
-  photo: /images/person-phd.svg
-  email: xinyi@example.edu
-  order: 2
-  bio: Postdoctoral researcher developing globally transferable crop mapping models from satellite imagery.
