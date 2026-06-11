@@ -13,14 +13,130 @@ Open [http://localhost:4321](http://localhost:4321) to preview the site.
 
 ## Editing content
 
-Non-coders should edit only:
+**Only edit these folders** (unless noted):
 
-- `src/content/` — news, people, publications, research, and openings
+- `src/content/` — page content (Markdown)
 - `public/images/` — photos and figures
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for field definitions and examples.
+Put images in `public/images/` and reference them as `/images/your-file.jpg`.
 
-Lab name and mission statement are in `src/site.config.ts`.
+For full field definitions, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+### Home (`/`)
+
+**Lab name and mission** — edit `src/site.config.ts`:
+
+```ts
+labName: 'Entekhabi Group',
+mission: 'Your one-sentence mission here.',
+```
+
+**Lab News** — add or edit files in `src/content/news/`. One file per item.
+
+```yaml
+---
+title: "Paper accepted at Example Conference"
+date: 2025-09-15
+image: /images/news-example.jpg   # optional
+---
+
+News text goes here. Markdown is supported.
+```
+
+Newest items appear first.
+
+---
+
+### People (`/people`)
+
+Add or edit files in `src/content/people/`. One file per person.
+
+```yaml
+---
+name: Jane Doe
+role: phd                        # pi | postdoc | phd | masters | undergrad | staff | associated | alumni
+photo: /images/people/jane.jpg
+email: jane@example.edu          # optional
+website: https://example.edu/~jane   # optional
+order: 1                         # unused for display; members/alumni sort by last name
+---
+
+Short bio in markdown.
+```
+
+**How people are grouped on the page:**
+
+| Section | Roles |
+|---|---|
+| PI (top row) | `pi` |
+| Current Members | `postdoc`, `phd`, `masters`, `undergrad` |
+| Associated Members | `staff`, `associated` |
+| Alumni | `alumni` |
+
+---
+
+### Research (`/research`)
+
+Add or edit files in `src/content/research/`. One file per topic.
+
+```yaml
+---
+title: "Remote Sensing"
+image: /images/research/rs.jpg   # optional
+order: 1                         # optional, lower = first
+---
+
+Description of this research area.
+```
+
+---
+
+### Publications (`/publications`)
+
+**Most papers load automatically** from OpenAlex (latest 25). You usually do not need to add them by hand.
+
+| Task | What to do |
+|---|---|
+| Refresh the list | Run `npm run fetch-publications` (also runs monthly via GitHub Actions) |
+| Hide a paper | Add its DOI to `scripts/exclusions.json` |
+| Add a paper manually | Create a file in `src/content/publications/` |
+| Add PDF or code link | Add a manual entry with the same `doi` — it merges with the OpenAlex entry |
+
+Manual publication example:
+
+```yaml
+---
+title: "Example Paper Title"
+authors: "A. Author, B. Author"
+venue: "Journal of Examples"
+year: 2025
+doi: 10.1234/example             # optional, used for deduplication
+pdf: https://example.com/paper.pdf   # optional
+code: https://github.com/example/repo   # optional
+---
+```
+
+---
+
+### Openings (`/openings`)
+
+Edit the single file `src/content/openings/openings.md`:
+
+```yaml
+---
+title: "Open Positions"
+---
+
+## PhD Students
+
+We are recruiting PhD students for Fall 2026.
+```
+
+Do not add other files to this folder.
+
+---
 
 ## Build
 

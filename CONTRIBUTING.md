@@ -35,7 +35,7 @@ Create a new `.md` file per person.
 | `photo` | string (path under `public/`) | yes |
 | `email` | string | no |
 | `website` | string (URL) | no |
-| `order` | number (sort order within role group) | yes |
+| `order` | number | yes (legacy field; members and alumni are sorted alphabetically by last name on the site) |
 
 The markdown body is the person's bio.
 

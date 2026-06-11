@@ -1,7 +1,7 @@
 ---
 import PersonCard from '../../components/PersonCard.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { PEOPLE_SECTIONS } from '../../utils/people';
+import { PEOPLE_SECTIONS, sortByLastName } from '../../utils/people';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 
@@ -15,7 +15,7 @@ function filterByRoles(
 	entries: CollectionEntry<'people'>[],
 	roles: readonly string[],
 ) {
-	return sortByOrder(entries.filter((p) => roles.includes(p.data.role)));
+	return sortByLastName(entries.filter((p) => roles.includes(p.data.role)));
 }
 
 const piMembers = sortByOrder(people.filter((p) => p.data.role === 'pi'));
