@@ -34,8 +34,10 @@ npm run preview
 1. Push this repository to GitHub.
 2. Update `site` in `astro.config.mjs` to your final URL (e.g. `https://lab.example.edu` or `https://yourorg.github.io`).
 3. If using a **project site** (URL like `https://yourorg.github.io/repo-name/`), also set `base: '/repo-name/'`.
-4. In the repo **Settings → Pages**, set **Source** to **GitHub Actions**.
-5. Push to the `main` branch — the workflow in `.github/workflows/deploy.yml` builds and deploys automatically.
+4. In the repo **Settings → Pages**, set **Source** to **Deploy from a branch**, branch **gh-pages**, folder **/ (root)**.
+5. Push to the `main` branch — the workflow in `.github/workflows/deploy.yml` builds and publishes to `gh-pages`.
+
+Live URL: **https://faisalalnasser13.github.io/EntekhabiGroup/**
 
 For a custom domain, configure it under **Settings → Pages → Custom domain** after updating `site` in `astro.config.mjs`.
 
