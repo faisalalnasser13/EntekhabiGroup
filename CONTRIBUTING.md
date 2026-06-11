@@ -52,9 +52,11 @@ order: 1
 Short bio in markdown.
 ```
 
-## Publications (`src/content/publications/`)
+## Publications
 
-Create a new `.md` file per publication. No markdown body is rendered.
+Most publications are fetched automatically from OpenAlex (see `src/data/publications.json`). To exclude a DOI from the automated list, add it to [`scripts/exclusions.json`](scripts/exclusions.json).
+
+Manual entries can still be added in `src/content/publications/` and are merged with the OpenAlex list (matching by DOI when present).
 
 | Field | Type | Required |
 |---|---|---|
@@ -62,6 +64,7 @@ Create a new `.md` file per publication. No markdown body is rendered.
 | `authors` | string | yes |
 | `venue` | string | yes |
 | `year` | number | yes |
+| `doi` | string | no |
 | `pdf` | string (URL) | no |
 | `code` | string (URL) | no |
 
@@ -71,6 +74,7 @@ title: "Example Paper Title"
 authors: "A. Author, B. Author"
 venue: "Journal of Examples"
 year: 2025
+doi: 10.1234/example
 pdf: https://example.com/paper.pdf
 code: https://github.com/example/repo
 ---

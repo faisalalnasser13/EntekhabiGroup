@@ -1,0 +1,240 @@
+{
+  "orcid": "0000-0002-8362-4761",
+  "fetchedAt": "2026-06-11T17:59:28.960Z",
+  "limit": 25,
+  "publications": [
+    {
+      "title": "A Semiempirical Modeling for Soil Moisture Retrieval Using High-Resolution SAR Data",
+      "authors": "Xiaolan Xu, Simon Yueh, Huanting Huang, Tianlin Wang, Narendra Das, Dara Entekhabi, Andreas Colliander",
+      "venue": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+      "year": 2026,
+      "doi": "10.1109/jstars.2026.3682116",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7159819474"
+    },
+    {
+      "title": "A subnational social vulnerability index for use in drought decision support systems",
+      "authors": "Md Sariful Islam, Yusuke Kuwayama, Dara Entekhabi, Katlyn M. Turner, Catherine Lu, Felipe Munoz Castillo, Zolana Joao, Vangiliya Filipe Pereira, Osvaldo Porto, Luciano Lupedia, Ivandro Rodrigues, Danielle Wood",
+      "venue": "Environmental Science & Policy",
+      "year": 2026,
+      "doi": "10.1016/j.envsci.2026.104349",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7133182823"
+    },
+    {
+      "title": "Consistent Soil Moisture and Vegetation Optical Depth From Relatively Calibrated SMOS Brightness Temperatures With SMAP",
+      "authors": "Julian Chaubell, Simon H. Yueh, Andreas Colliander, Akiko Hayashi, Rajat Bindlish, R. Scott Dunbar, Dara Entekhabi, Jun Asanuma, Aaron A. Berg, Alisa Coffin, Michael H. Cosh, Gerald Flerchinger, Ann-Marie Fortuna, Chandra Holifield Collins, Taras Lychuk, José Martínez-Fernández, Kayla Moore, Zhongbo Su, Jeffrey Walker",
+      "venue": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+      "year": 2026,
+      "doi": "10.1109/jstars.2026.3666810",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7130727881"
+    },
+    {
+      "title": "Control of vegetation and temperature on topsoil water losses",
+      "authors": "Martin Johannes Baur, Lucas Vargas Zeppetello, Andrew Friend, Dara Entekhabi",
+      "venue": "",
+      "year": 2026,
+      "doi": "10.5194/egusphere-egu26-1088",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7135172120"
+    },
+    {
+      "title": "Control of Vegetation and Temperature on Topsoil Water Losses",
+      "authors": "Martin J. Baur, Lucas R. Vargas Zeppetello, Andrew D. Friend, Dara Entekhabi",
+      "venue": "Water Resources Research",
+      "year": 2026,
+      "doi": "10.1029/2025wr040632",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7153607229"
+    },
+    {
+      "title": "Integrating Satellite Retrievals, Numerical Models, and Machine Learning for Global Groundwater Recharge Estimation",
+      "authors": "M. E. Soylu, D. Entekhabi, R. L. Bras",
+      "venue": "Water Resources Research",
+      "year": 2026,
+      "doi": "10.1029/2025wr040312",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7140313260"
+    },
+    {
+      "title": "Interferometric synthetic aperture radar (InSAR) phase data assimilation for Bayesian snow water equivalent estimation",
+      "authors": "Steven A. Margulis, Maya Hildebrand, Xiaolan Xu, Manuela Girotto, Hans-Peter Marshall, Rashmi Shah, Elias Deeb, Simon Yueh, Dara Entekhabi, Jessica Lundquist",
+      "venue": "",
+      "year": 2026,
+      "doi": "10.5194/egusphere-2026-1594",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7160099307"
+    },
+    {
+      "title": "Meteorological to Agricultural Drought Transitions Compounded by Heat Waves in Historical and Future Climates",
+      "authors": "Daniel J. Short Gianotti, Meriah J. Gannon, Dara Entekhabi",
+      "venue": "Water Resources Research",
+      "year": 2026,
+      "doi": "10.1029/2024wr039170",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7133494965"
+    },
+    {
+      "title": "Satellite Microwave Radiometry at L-Band for Monitoring Earth’s Essential Climate Variables: From Fundamental Physics to Sixteen Years of Global Climate Observations and Beyond",
+      "authors": "Yiwen Zhou, Mike Schwank, Jacqueline Boutin, Philippe Richaume, Arnaud Mialon, Manu Holmberg, Lars Kaleschke, Pierre Zeiger, Marion Leduc-Leballeur, Ardeshir Ebtehaj, Divya Kumawat, Nemesio Rodriguez-Fernandez, Estrella Olmedo, Andreas Colliander, Emmanuel Dinnat, Andrew Feldman, Mehmet Kurum, Juha Lemmetyinen, Kimmo Rautiainen, Ghislain Picard, Nicolas Reul, Stefan Hendricks, Xiangshan Tian-Kunze, Rasmus Tonboe, Cristina Vittucci, Marco Brogioni, Kenneth Jezek, Giovanni Macelloni, Matthias Drusch, Joel Johnson, Roger H. Lang, David M. Le Vine, Dara Entekhabi, Yann Kerr",
+      "venue": "IEEE Geoscience and Remote Sensing Magazine",
+      "year": 2026,
+      "doi": "10.1109/mgrs.2026.3665669",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7147327190"
+    },
+    {
+      "title": "Vegetation water content mediates decoupling between leaf-out and rainfall onset in the African dry tropics",
+      "authors": "Bryn Morgan, Dara Entekhabi",
+      "venue": "",
+      "year": 2026,
+      "doi": "10.5194/egusphere-egu26-14952",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7135198262"
+    },
+    {
+      "title": "A global dataset of remote sensing-based soil critical point and permanent wilting point",
+      "authors": "Yawei Xu, Qing He, Hui Lu, Kun Yang, Dara Entekhabi, Daniel J. Short Gianotti",
+      "venue": "Scientific Data",
+      "year": 2025,
+      "doi": "10.1038/s41597-025-05048-y",
+      "pdf": "https://www.nature.com/articles/s41597-025-05048-y.pdf",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4410010603"
+    },
+    {
+      "title": "A Semi-Empirical Modeling for Surface Soil Moisture Retrieval Using High-Resolution Synthetic Aperture Radar Data",
+      "authors": "Xiaolan Xu, Huanting Huang, Simon Yueh, Tianlin Wang, Dara Entekhabi, Narendra  N. Das, Andreas Colliander",
+      "venue": "SSRN Electronic Journal",
+      "year": 2025,
+      "doi": "10.2139/ssrn.5398234",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4413343634"
+    },
+    {
+      "title": "Author Correction: No detectable trend in mid-latitude cold extremes during the recent period of Arctic amplification",
+      "authors": "Judah Cohen, Laurie Agel, Mathew Barlow, Dara Entekhabi",
+      "venue": "Communications Earth & Environment",
+      "year": 2025,
+      "doi": "10.1038/s43247-025-02217-0",
+      "pdf": "https://www.nature.com/articles/s43247-025-02217-0.pdf",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4408970544"
+    },
+    {
+      "title": "Evaluating Fire Indices for Fire Ignition and Spread Risk in the Western United States",
+      "authors": "Bowen Wang, A. Park Williams, Dara Entekhabi, Gavin D Madakumbura, Dennis P. Lettenmaier, Jennifer K. Balch, Stefan R. Rahimi-Esfarjani, Lei Huang, Alex Hall",
+      "venue": "",
+      "year": 2025,
+      "doi": "10.22541/essoar.176296827.76595361/v1",
+      "pdf": "https://essopenarchive.org/doi/pdf/10.22541/essoar.176296827.76595361/v1",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4416203466"
+    },
+    {
+      "title": "Feasibility of L-Band Sharpening With C-Band Using SMAP and AMSR Radiometry Data for Future Application to CIMR",
+      "authors": "Michelle S. Zhang, Faisal AlNasser, María Piles, Dara Entekhabi",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "year": 2025,
+      "doi": "10.1109/tgrs.2025.3533425",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4407025652"
+    },
+    {
+      "title": "GNSS-R Coherence Inversion for Land Surface Roughness and Vegetation Parameter Retrievals",
+      "authors": "Nereida Rodriguez-Alvarez, Xavier Bosch-Lluis, Kamal Oudrhiri, Dara Entekhabi, Mark D. Garcia",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "year": 2025,
+      "doi": "10.1109/tgrs.2025.3636048",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4416513608"
+    },
+    {
+      "title": "Impact of L-band Vegetation Optical Depth Temporal Variation on Soil Moisture Retrieval",
+      "authors": "Andreas Colliander, Michael Cosh, Simon Kraatz, Laura Bourgeau-Chavez, Julian Chaubell, Xiaolan Xu, Vicky Kelly, Paul Siqueira, Kyle McDonald, Nick Steiner, Mehmet Kurum, Alexandre Roy, Aaron Berg, Cristina Vittucci, Leung Tsang, Dara Entekhabi, Simon Yueh",
+      "venue": "",
+      "year": 2025,
+      "doi": "10.5194/egusphere-egu25-7207",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4408436560"
+    },
+    {
+      "title": "Influences of soil moisture and vegetation cover on dust emission using satellite observations",
+      "authors": "Faisal AlNasser, Abdelghani Chehbouni, Dara Entekhabi",
+      "venue": "Aeolian Research",
+      "year": 2025,
+      "doi": "10.1016/j.aeolia.2025.100961",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4407315520"
+    },
+    {
+      "title": "Relative Contributions of Surface Parcel and Atmospheric Environment to Convective Potential during Interstorm Periods",
+      "authors": "Michelle S. Zhang, David D. Turner, Dara Entekhabi",
+      "venue": "Journal of Hydrometeorology",
+      "year": 2025,
+      "doi": "10.1175/jhm-d-25-0045.1",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4413430891"
+    },
+    {
+      "title": "Reply to: Observed warming of cold extremes is not captured with a fixed threshold definition",
+      "authors": "Judah Cohen, Laurie Agel, Mathew Barlow, Dara Entekhabi",
+      "venue": "Communications Earth & Environment",
+      "year": 2025,
+      "doi": "10.1038/s43247-025-02630-5",
+      "pdf": "https://www.nature.com/articles/s43247-025-02630-5.pdf",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4414947311"
+    },
+    {
+      "title": "SMAP Validation Experiment 2019–2022 (SMAPVEX19–22): Field Campaign to Improve Soil Moisture and Vegetation Optical Depth Retrievals in Temperate Forests",
+      "authors": "Andreas Colliander, Michael H. Cosh, Laura Bourgeau-Chavez, Victoria R. Kelly, Simon Kraatz, Paul Siqueira, Victoria A. Walker, Xingjian Chen, Alexandre Roy, Tarendra Lakhankar, Kyle C. McDonald, Nicholas Steiner, Mehmet Kurum, Seung-bum Kim, Aaron Berg, Xiaolan Xu, Sidharth Misra, Mehmet Ogut, Cristina Vittucci, John S. Kimball, Dara Entekhabi, Simon H. Yueh",
+      "venue": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+      "year": 2025,
+      "doi": "10.1109/jstars.2025.3553085",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4408840904"
+    },
+    {
+      "title": "Spatiotemporal Patterns of Drought Migration Across the Contiguous United States",
+      "authors": "Amitesh Sabut, Ashok Mishra, Dara Entekhabi",
+      "venue": "Water Resources Research",
+      "year": 2025,
+      "doi": "10.1029/2024wr039855",
+      "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024WR039855",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4411654274"
+    },
+    {
+      "title": "Diurnal Vegetation Moisture Cycle in the Amazon and Response to Water Stress",
+      "authors": "Milad Asgarimehr, Dara Entekhabi, Adriano Camps",
+      "venue": "Geophysical Research Letters",
+      "year": 2024,
+      "doi": "10.1029/2024gl111462",
+      "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024GL111462",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4403207915"
+    },
+    {
+      "title": "Diurnal Vegetation Moisture Cycle in the Amazon and Response to Water Stress",
+      "authors": "Milad Asgarimehr, Dara Entekhabi, Adriano Camps",
+      "venue": "",
+      "year": 2024,
+      "doi": "10.22541/essoar.172433768.83500449/v1",
+      "pdf": "https://gfzpublic.gfz-potsdam.de/pubman/item/item_5028073_2/component/file_5028289/5028073.pdf",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4401759786"
+    },
+    {
+      "title": "Dust Source Areas and Their Plume Extent Derived From Satellite Data Fields",
+      "authors": "Faisal AlNasser, Abdelghani Chehbouni, Dara Entekhabi",
+      "venue": "Geophysical Research Letters",
+      "year": 2024,
+      "doi": "10.1029/2024gl110753",
+      "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024GL110753",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W4401808822"
+    }
+  ]
+}

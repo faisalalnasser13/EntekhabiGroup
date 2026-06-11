@@ -29,6 +29,16 @@ npm run build
 npm run preview
 ```
 
+## Publications sync
+
+Fetch the latest 25 publications from OpenAlex (ORCID `0000-0002-8362-4761`):
+
+```bash
+npm run fetch-publications
+```
+
+Output is written to `src/data/publications.json`. Exclude DOIs via `scripts/exclusions.json`. A GitHub Actions workflow syncs monthly and on manual dispatch.
+
 ## Deployment (GitHub Pages)
 
 1. Push this repository to GitHub.

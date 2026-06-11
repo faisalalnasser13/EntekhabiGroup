@@ -1,18 +1,39 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import publicationsData from '../../data/publications.json';
+import {
+	groupPublicationsByYear,
+	mergePublications,
+	type Publication,
+} from '../../utils/publications';
 import { getCollection } from 'astro:content';
 
-const publications = await getCollection('publications');
+const manualPublications: Publication[] = (await getCollection('publications')).map(
+	(entry) => ({
+		title: entry.data.title,
+		authors: entry.data.authors,
+		venue: entry.data.venue,
+		year: entry.data.year,
+		doi: entry.data.doi ?? null,
+		pdf: entry.data.pdf ?? null,
+		code: entry.data.code ?? null,
+		source: 'manual' as const,
+	}),
+);
 
-const byYear = new Map<number, typeof publications>();
-for (const pub of publications) {
-	const year = pub.data.year;
-	if (!byYear.has(year)) {
-		byYear.set(year, []);
-	}
-	byYear.get(year)!.push(pub);
-}
+const openAlexPublications: Publication[] = publicationsData.publications.map((entry) => ({
+	title: entry.title,
+	authors: entry.authors,
+	venue: entry.venue,
+	year: entry.year ?? 0,
+	doi: entry.doi,
+	pdf: entry.pdf,
+	code: null,
+	source: 'openalex' as const,
+}));
 
+const publications = mergePublications(openAlexPublications, manualPublications);
+const byYear = groupPublicationsByYear(publications);
 const years = [...byYear.keys()].sort((a, b) => b - a);
 ---
 
@@ -26,18 +47,27 @@ const years = [...byYear.keys()].sort((a, b) => b - a);
 				<ul class="pub-list">
 					{byYear.get(year)!.map((pub) => (
 						<li class="pub-item">
-							<p class="pub-title">{pub.data.title}</p>
-							<p class="pub-authors">{pub.data.authors}</p>
-							<p class="pub-venue">{pub.data.venue}</p>
-							{(pub.data.pdf || pub.data.code) && (
+							<p class="pub-title">{pub.title}</p>
+							<p class="pub-authors">{pub.authors}</p>
+							{pub.venue && <p class="pub-venue">{pub.venue}</p>}
+							{(pub.pdf || pub.code || pub.doi) && (
 								<p class="pub-links">
-									{pub.data.pdf && (
-										<a href={pub.data.pdf} target="_blank" rel="noopener noreferrer">
+									{pub.doi && (
+										<a
+											href={`https://doi.org/${pub.doi}`}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											DOI
+										</a>
+									)}
+									{pub.pdf && (
+										<a href={pub.pdf} target="_blank" rel="noopener noreferrer">
 											PDF
 										</a>
 									)}
-									{pub.data.code && (
-										<a href={pub.data.code} target="_blank" rel="noopener noreferrer">
+									{pub.code && (
+										<a href={pub.code} target="_blank" rel="noopener noreferrer">
 											Code
 										</a>
 									)}
