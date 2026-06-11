@@ -1,6 +1,6 @@
 ---
 name: Faisal AlNasser
-role: PhD
+role: phd
 photo: /images/people/jane.jpg
 email: Alnasser@mit.edu
 website: https://example.edu/~jane
