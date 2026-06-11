@@ -31,7 +31,7 @@ Create a new `.md` file per person.
 | Field | Type | Required |
 |---|---|---|
 | `name` | string | yes |
-| `role` | enum: `pi`, `postdoc`, `phd`, `masters`, `undergrad`, `staff`, `alumni` | yes |
+| `role` | enum: `pi`, `postdoc`, `phd`, `masters`, `undergrad`, `staff`, `associated`, `alumni` | yes |
 | `photo` | string (path under `public/`) | yes |
 | `email` | string | no |
 | `website` | string (URL) | no |

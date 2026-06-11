@@ -18,7 +18,7 @@ Build a static academic lab website. Reference for tone/structure: https://earth
 ## Content collections (src/content/)
 Use Astro content collections with Zod schemas. Schemas MUST match CONTRIBUTING.md exactly:
 - `news`: title (string), date (date), image (string, optional) + markdown body
-- `people`: name, role (enum: pi|postdoc|phd|masters|undergrad|staff|alumni), photo, email?, website?, order (number) + body
+- `people`: name, role (enum: pi|postdoc|phd|masters|undergrad|staff|associated|alumni), photo, email?, website?, order (number) + body
 - `publications`: title, authors, venue, year (number), pdf?, code?
 - `research`: title, image?, order? + body
 - `openings`: single openings.md

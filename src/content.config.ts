@@ -9,6 +9,7 @@ const personRole = z.enum([
 	'masters',
 	'undergrad',
 	'staff',
+	'associated',
 	'alumni',
 ]);
 

@@ -5,6 +5,7 @@ export const ROLE_ORDER = [
 	'masters',
 	'undergrad',
 	'staff',
+	'associated',
 	'alumni',
 ] as const;
 
@@ -17,5 +18,15 @@ export const ROLE_LABELS: Record<PersonRole, string> = {
 	masters: "Master's Student",
 	undergrad: 'Undergraduate',
 	staff: 'Staff',
+	associated: 'Associated Member',
 	alumni: 'Alumni',
 };
+
+export const CURRENT_MEMBER_ROLES = ['postdoc', 'phd', 'masters', 'undergrad'] as const;
+export const ASSOCIATED_MEMBER_ROLES = ['staff', 'associated'] as const;
+
+export const PEOPLE_SECTIONS = [
+	{ id: 'current', title: 'Current Members', roles: CURRENT_MEMBER_ROLES },
+	{ id: 'associated', title: 'Associated Members', roles: ASSOCIATED_MEMBER_ROLES },
+	{ id: 'alumni', title: 'Alumni', roles: ['alumni'] as const },
+] as const;

@@ -11,6 +11,7 @@
 	--border: #e0e0e0;
 	--bg: #ffffff;
 	--max-width: 840px;
+	--max-width-content: 1100px;
 }
 
 html {
@@ -49,8 +50,13 @@ a:hover {
 
 .container {
 	max-width: var(--max-width);
+	width: 100%;
 	margin: 0 auto;
-	padding: 0 1.5rem;
+	padding-inline: 1.5rem;
+}
+
+main .container {
+	max-width: var(--max-width-content);
 }
 
 /* Header & Nav */
@@ -258,18 +264,33 @@ main {
 
 /* People */
 
-.people-group {
-	margin-bottom: 2.5rem;
+.people-pi-section {
+	margin-bottom: 0;
 }
 
-.people-group-title {
-	font-size: 1rem;
+.people-pi-row {
+	display: flex;
+	justify-content: center;
+	max-width: 220px;
+	margin: 0 auto;
+}
+
+.people-divider {
+	border: none;
+	border-top: 1px solid var(--border);
+	margin: 2.5rem 0;
+}
+
+.people-section {
+	margin-bottom: 0;
+}
+
+.people-section-title {
+	font-size: 1.1rem;
 	font-weight: 600;
-	margin: 0 0 1rem;
-	color: var(--text-muted);
-	text-transform: uppercase;
-	letter-spacing: 0.04em;
-	font-size: 0.8rem;
+	margin: 0 0 1.25rem;
+	color: var(--text);
+	letter-spacing: -0.01em;
 }
 
 .people-grid {
@@ -287,6 +308,12 @@ main {
 @media (min-width: 768px) {
 	.people-grid {
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 960px) {
+	.people-grid {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
