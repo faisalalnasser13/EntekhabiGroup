@@ -16,7 +16,7 @@ Open [http://localhost:4321](http://localhost:4321) to preview the site.
 **Only edit these folders** (unless noted):
 
 - `src/content/` — page content (Markdown)
-- `src/data/people.yaml` and `src/data/publications.yaml` — people and manual publications
+- `src/data/publications.yaml` — manual publications
 - `public/images/` — photos and figures
 
 Put images in `public/images/` and reference them as `/images/your-file.jpg`.
@@ -52,17 +52,19 @@ Newest items appear first.
 
 ### People (`/people`)
 
-Edit [`src/data/people.yaml`](src/data/people.yaml) on GitHub (pencil icon) and append a new block. **Indentation matters** — use 2 spaces per level.
+Add a file in `src/content/people/` (e.g. `jane-doe.md`). One file per person.
 
 ```yaml
-jane-doe:
-  name: Jane Doe
-  role: phd                        # pi | postdoc | phd | masters | undergrad | staff | associated | alumni
-  photo: /images/people/jane.jpg
-  email: jane@example.edu          # optional
-  website: https://example.edu/~jane   # optional
-  order: 1
-  bio: Short bio as plain text.    # optional
+---
+name: Jane Doe
+role: phd                        # pi | postdoc | phd | masters | undergrad | staff | associated | alumni
+photo: /images/people/jane.jpg
+email: jane@example.edu          # optional
+website: https://example.edu/~jane   # optional
+order: 1
+---
+
+Short bio in markdown.
 ```
 
 **How people are grouped on the page:**
@@ -169,8 +171,8 @@ For a custom domain, configure it under **Settings → Pages → Custom domain**
 
 ```
 src/
-  content/          # Markdown: news, research, openings
-  data/             # YAML: people.yaml, publications.yaml (+ publications.json from OpenAlex)
+  content/          # Markdown: news, people, research, openings
+  data/             # publications.yaml + publications.json (OpenAlex)
   content.config.ts # Content schemas (do not edit unless adding fields)
   layouts/          # Page shell
   pages/            # Routes
