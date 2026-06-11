@@ -11,7 +11,7 @@
 	--border: #e0e0e0;
 	--bg: #ffffff;
 	--max-width: 840px;
-	--max-width-content: 1100px;
+	--max-width-content: 1300px;
 }
 
 html {
@@ -266,13 +266,6 @@ main {
 
 .people-pi-section {
 	margin-bottom: 0;
-}
-
-.people-pi-row {
-	display: flex;
-	justify-content: center;
-	max-width: 220px;
-	margin: 0 auto;
 }
 
 .people-divider {
