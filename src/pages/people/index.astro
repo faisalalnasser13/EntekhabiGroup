@@ -11,18 +11,11 @@ function sortByOrder(entries: CollectionEntry<'people'>[]) {
 	return [...entries].sort((a, b) => a.data.order - b.data.order);
 }
 
-function filterByRoles(
-	entries: CollectionEntry<'people'>[],
-	roles: readonly string[],
-) {
-	return sortByLastName(entries.filter((p) => roles.includes(p.data.role)));
-}
-
 const piMembers = sortByOrder(people.filter((p) => p.data.role === 'pi'));
 
 const sections = PEOPLE_SECTIONS.map((section) => ({
 	...section,
-	members: filterByRoles(people, section.roles),
+	members: sortByLastName(people.filter((p) => p.data.role === section.role)),
 }));
 ---
 

@@ -1,5 +1,6 @@
 alex-chen:
   name: Alex Chen
+  title: Alumni
   role: alumni
   photo: /images/person-alumni.svg
   website: https://example.edu/~achen
@@ -7,7 +8,8 @@ alex-chen:
   bio: Former PhD student (2024). Now a postdoctoral researcher studying hydrologic forecasting with machine learning.
 alnasser:
   name: Faisal AlNasser
-  role: phd
+  title: PhD Student
+  role: current
   photo: /images/people/jane.jpg
   email: Alnasser@mit.edu
   website: https://example.edu/~jane
@@ -15,7 +17,8 @@ alnasser:
   bio: Faisal is a PhD student in CEE.
 bowen:
   name: Bowen Wang
-  role: phd
+  title: PhD Student
+  role: current
   photo: /images/people/jane.jpg
   email: bowenw@mit.edu
   website: https://example.edu/~jane
@@ -23,7 +26,8 @@ bowen:
   bio: Bowen is a PhD student in CEE and like tea
 bryn:
   name: Bryn E Morgan
-  role: postdoc
+  title: Postdoctoral Researcher
+  role: current
   photo: /images/people/jane.jpg
   email: bryn@example.edu
   website: https://example.edu/~jane
@@ -31,6 +35,7 @@ bryn:
   bio: Bryn is a Postdoc and likes plants
 carlos-mendez:
   name: Carlos Mendez
+  title: Alumni
   role: alumni
   photo: /images/person-alumni.svg
   website: https://example.edu/~cmendez
@@ -38,6 +43,7 @@ carlos-mendez:
   bio: PhD alumnus (2022). Faculty member researching snow hydrology and microwave remote sensing.
 dara-entekhabi:
   name: Dara Entekhabi
+  title: Principal Investigator
   role: pi
   photo: /images/person-pi.svg
   email: entekhabi@example.edu
@@ -46,6 +52,7 @@ dara-entekhabi:
   bio: Professor of Civil and Environmental Engineering. Research focuses on land-atmosphere interactions, remote sensing of the water cycle, and data assimilation for Earth system science.
 david-obrien:
   name: David O'Brien
+  title: Alumni
   role: alumni
   photo: /images/person-alumni.svg
   website: https://example.edu/~dobrien
@@ -53,6 +60,7 @@ david-obrien:
   bio: PhD alumnus (2020). Research scientist at a national lab working on land surface model development.
 elena-vasquez:
   name: Dr. Elena Vasquez
+  title: Associated Member
   role: associated
   photo: /images/person-alumni.svg
   website: https://example.edu/~evasquez
@@ -60,6 +68,7 @@ elena-vasquez:
   bio: Collaborating scientist in hydrometeorology and satellite precipitation retrievals.
 emily-zhang:
   name: Emily Zhang
+  title: Alumni
   role: alumni
   photo: /images/person-alumni.svg
   website: https://example.edu/~ezhang
@@ -67,7 +76,8 @@ emily-zhang:
   bio: Master's alumna (2021). Environmental consultant specializing in water resource management.
 gianotti:
   name: Daniel J. Short Gianotti
-  role: postdoc
+  title: Research Scientist
+  role: current
   photo: /images/people/jane.jpg
   email: jane@example.edu
   website: https://example.edu/~jane
@@ -75,6 +85,7 @@ gianotti:
   bio: Dan is a great Research Scientist
 hannah-brooks:
   name: Hannah Brooks
+  title: Alumni
   role: alumni
   photo: /images/person-alumni.svg
   website: https://example.edu/~hbrooks
@@ -82,6 +93,7 @@ hannah-brooks:
   bio: Undergraduate alumna (2019). Software engineer building geospatial analytics platforms.
 james-okonkwo:
   name: Dr. James Okonkwo
+  title: Associated Member
   role: associated
   photo: /images/person-alumni.svg
   website: https://example.edu/~jokonkwo
@@ -89,36 +101,65 @@ james-okonkwo:
   bio: Affiliate researcher focused on Earth observation datasets for foundation model training.
 jordan-lee:
   name: Jordan Lee
-  role: undergrad
+  title: Undergraduate Researcher
+  role: current
   photo: /images/person-phd.svg
   email: jordan@example.edu
   order: 5
   bio: Undergraduate researcher supporting field campaigns and ground-truth data collection for crop type mapping.
 kerri-lu:
   name: Kerri Lu
-  role: phd
+  title: PhD Student
+  role: current
   photo: /images/person-phd.svg
   email: kerri@example.edu
   order: 1
   bio: PhD student working on statistical methods for remote sensing applications, including prediction-powered inference for environmental monitoring.
 mei-lin:
   name: Mei Lin
-  role: staff
+  title: Staff
+  role: associated
   photo: /images/person-alumni.svg
   email: meilin@example.edu
   order: 3
   bio: Lab manager coordinating field operations, computing resources, and project logistics.
+morgan-park:
+  name: Morgan Park
+  title: PhD Student
+  role: current
+  photo: /images/person-phd.svg
+  email: morgan@example.edu
+  order: 6
+  bio: PhD student building machine learning emulators for hydrologic forecasting and uncertainty quantification.
 mzhang:
   name: Michelle Zhang
-  role: phd
+  title: PhD Student
+  role: current
   photo: /images/people/jane.jpg
   email: mshzhang@mit.edu
   website: https://example.edu/~jane
   order: 1
   bio: Michelle is a PhD student in CEE.
+nina-patel:
+  name: Nina Patel
+  title: Alumni
+  role: alumni
+  photo: /images/person-alumni.svg
+  website: https://example.edu/~npatel
+  order: 2
+  bio: PhD alumna (2023). Now a data scientist applying remote sensing to urban heat island studies.
+priya-mehta:
+  name: Priya Mehta
+  title: Master's Student
+  role: current
+  photo: /images/person-phd.svg
+  email: priya@example.edu
+  order: 4
+  bio: Master's student working on drought monitoring with multi-sensor remote sensing products.
 reguyal:
   name: Victoria Reguyal
-  role: undergrad
+  title: Undergraduate Researcher
+  role: current
   photo: /images/people/jane.jpg
   email: reguyal@mit.edu
   website: https://example.edu/~jane
@@ -126,22 +167,41 @@ reguyal:
   bio: Victoria is our newest member
 robert-kim:
   name: Robert Kim
+  title: Associated Member
   role: associated
   photo: /images/person-alumni.svg
   website: https://example.edu/~rkim
   order: 4
   bio: Visiting scientist studying multi-modal weather forecasting with satellite and reanalysis data.
+sam-rivera:
+  name: Sam Rivera
+  title: PhD Student
+  role: current
+  photo: /images/person-phd.svg
+  email: sam@example.edu
+  order: 3
+  bio: PhD student studying land-atmosphere coupling and soil moisture dynamics using SMAP and model assimilation.
 sarah-ibrahim:
   name: Sarah Ibrahim
-  role: staff
+  title: Staff
+  role: associated
   photo: /images/person-alumni.svg
   email: sibrahim@example.edu
   order: 5
   bio: Research computing specialist supporting data pipelines and high-performance workflows.
 tom-walsh:
   name: Tom Walsh
+  title: Associated Member
   role: associated
   photo: /images/person-alumni.svg
   website: https://example.edu/~twalsh
   order: 6
   bio: External collaborator on scalable ground truthing methods for agricultural remote sensing.
+xinyi-tong:
+  name: Xin-Yi Tong
+  title: Postdoctoral Researcher
+  role: current
+  photo: /images/person-phd.svg
+  email: xinyi@example.edu
+  order: 2
+  bio: Postdoctoral researcher developing globally transferable crop mapping models from satellite imagery.

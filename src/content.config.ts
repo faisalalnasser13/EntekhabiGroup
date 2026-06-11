@@ -2,16 +2,7 @@ import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-const personRole = z.enum([
-	'pi',
-	'postdoc',
-	'phd',
-	'masters',
-	'undergrad',
-	'staff',
-	'associated',
-	'alumni',
-]);
+const personGroup = z.enum(['pi', 'current', 'associated', 'alumni']);
 
 const news = defineCollection({
 	loader: glob({ pattern: '**/*.md', base: './src/content/news' }),
@@ -27,7 +18,8 @@ const people = defineCollection({
 	schema: z
 		.object({
 			name: z.string(),
-			role: personRole,
+			title: z.string(),
+			role: personGroup,
 			photo: z.string(),
 			email: z.string().optional(),
 			website: z.string().optional(),

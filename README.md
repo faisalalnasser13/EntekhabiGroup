@@ -56,7 +56,8 @@ Edit [`src/content/people.yaml`](src/content/people.yaml) on GitHub (pencil icon
 ```yaml
 jane-doe:
   name: Jane Doe
-  role: phd                        # pi | postdoc | phd | masters | undergrad | staff | associated | alumni
+  title: PhD Student              # shown on the card — enter any job title
+  role: current                  # pi | current | associated | alumni
   photo: /images/people/jane.jpg
   email: jane@example.edu          # optional
   website: https://example.edu/~jane   # optional
@@ -66,11 +67,11 @@ jane-doe:
 
 **How people are grouped on the page:**
 
-| Section | Roles |
+| Section | `role` value |
 |---|---|
 | PI (top row) | `pi` |
-| Current Members | `postdoc`, `phd`, `masters`, `undergrad` |
-| Associated Members | `staff`, `associated` |
+| Current Members | `current` |
+| Associated Members | `associated` |
 | Alumni | `alumni` |
 
 ---

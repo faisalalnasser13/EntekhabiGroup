@@ -40,7 +40,8 @@ Each person is one block. The top-level key is a unique ID (lowercase, hyphens, 
 ```yaml
 jane-doe:
   name: Jane Doe
-  role: phd
+  title: PhD Student
+  role: current
   photo: /images/people/jane.jpg
   email: jane@example.edu
   website: https://example.edu/~jane
@@ -51,14 +52,17 @@ jane-doe:
 | Field | Type | Required |
 |---|---|---|
 | `name` | string | yes |
-| `role` | enum: `pi`, `postdoc`, `phd`, `masters`, `undergrad`, `staff`, `associated`, `alumni` | yes |
+| `title` | string (job title shown on the site, e.g. `PhD Student`, `Professor`) | yes |
+| `role` | enum: `pi`, `current`, `associated`, `alumni` (controls which section they appear in) | yes |
 | `photo` | string (path under `public/`) | yes |
 | `email` | string | no |
 | `website` | string (URL) | no |
 | `order` | number | yes |
 | `bio` | string (plain text) | no |
 
-Members and alumni are sorted alphabetically by last name on the site.
+Members and alumni are sorted alphabetically by last name within their section.
+
+**Section groups:** `pi` (top row), `current` (Current Members), `associated` (Associated Members), `alumni` (Alumni).
 
 ## Publications
 
