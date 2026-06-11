@@ -14,7 +14,7 @@ alnasser:
   email: Alnasser@mit.edu
   website: https://example.edu/~jane
   order: 1
-  bio: Faisal is a PhD student in CEE.
+  bio: Faisal is a PhD student in CEE and is the group's anchor
 bowen:
   name: Bowen Wang
   title: PhD Student
@@ -23,7 +23,7 @@ bowen:
   email: bowenw@mit.edu
   website: https://example.edu/~jane
   order: 1
-  bio: Bowen is a PhD student in CEE and like tea
+  bio: Bowen is a PhD student in CEE who likes tea
 bryn:
   name: Bryn E Morgan
   title: Postdoctoral Researcher
@@ -32,7 +32,7 @@ bryn:
   email: bryn@example.edu
   website: https://example.edu/~
   order: 1
-  bio: Bryn is a Postdoc and likes plants
+  bio: Bryn is the group's best Postdoc
 carlos-mendez:
   name: Carlos Mendez
   title: Alumni
@@ -82,7 +82,7 @@ gianotti:
   email: jane@example.edu
   website: https://example.edu/~jane
   order: 1
-  bio: Dan is a great Research Scientist
+  bio: Dan is the group's best Research Scientist
 hannah-brooks:
   name: Hannah Brooks
   title: Alumni
@@ -107,14 +107,6 @@ jordan-lee:
   email: jordan@example.edu
   order: 5
   bio: Undergraduate researcher supporting field campaigns and ground-truth data collection for crop type mapping.
-kerri-lu:
-  name: Kerri Lu
-  title: PhD Student
-  role: current
-  photo: /images/person-phd.svg
-  email: kerri@example.edu
-  order: 1
-  bio: PhD student working on statistical methods for remote sensing applications, including prediction-powered inference for environmental monitoring.
 mei-lin:
   name: Mei Lin
   title: Staff
@@ -123,14 +115,6 @@ mei-lin:
   email: meilin@example.edu
   order: 3
   bio: Lab manager coordinating field operations, computing resources, and project logistics.
-morgan-park:
-  name: Morgan Park
-  title: PhD Student
-  role: current
-  photo: /images/person-phd.svg
-  email: morgan@example.edu
-  order: 6
-  bio: PhD student building machine learning emulators for hydrologic forecasting and uncertainty quantification.
 mzhang:
   name: Michelle Zhang
   title: PhD Student
@@ -139,7 +123,7 @@ mzhang:
   email: mshzhang@mit.edu
   website: https://example.edu/~jane
   order: 1
-  bio: Michelle is a PhD student in CEE.
+  bio: Michelle is a PhD student in CEE and the best runner in the group
 nina-patel:
   name: Nina Patel
   title: Alumni
