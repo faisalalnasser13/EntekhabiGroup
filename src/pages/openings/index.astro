@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+const openings = await getCollection('openings');
+const entry = openings[0];
+
+if (!entry) {
+	throw new Error('Missing openings content at src/content/openings/openings.md');
+}
+
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title}>
+	<h1 class="page-title">{entry.data.title}</h1>
+	<div class="prose">
+		<Content />
+	</div>
+</BaseLayout>

@@ -1,0 +1,36 @@
+---
+import { pageUrl } from '../utils/url';
+
+interface Props {
+	currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const links = [
+	{ href: pageUrl(''), label: 'Home', match: (p: string) => p === '/' || p === '' },
+	{ href: pageUrl('people/'), label: 'People', match: (p: string) => p.startsWith('/people') },
+	{ href: pageUrl('research/'), label: 'Research', match: (p: string) => p.startsWith('/research') },
+	{
+		href: pageUrl('publications/'),
+		label: 'Publications',
+		match: (p: string) => p.startsWith('/publications'),
+	},
+	{ href: pageUrl('openings/'), label: 'Openings', match: (p: string) => p.startsWith('/openings') },
+];
+
+const normalizedPath = currentPath.replace(/\/$/, '') || '/';
+---
+
+<nav class="site-nav" aria-label="Main">
+	{
+		links.map((link) => {
+			const isCurrent = link.match(normalizedPath);
+			return (
+				<a href={link.href} aria-current={isCurrent ? 'page' : undefined}>
+					{link.label}
+				</a>
+			);
+		})
+	}
+</nav>

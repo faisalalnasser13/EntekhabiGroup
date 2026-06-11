@@ -1,43 +1,54 @@
-# Astro Starter Kit: Minimal
+# Entekhabi Group Website
 
-```sh
-npm create astro@latest -- --template minimal
+Static academic lab website built with [Astro](https://astro.build/). Content is managed via Markdown files — no backend or database required.
+
+## Local development
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Open [http://localhost:4321](http://localhost:4321) to preview the site.
 
-## 🚀 Project Structure
+## Editing content
 
-Inside of your Astro project, you'll see the following folders and files:
+Non-coders should edit only:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+- `src/content/` — news, people, publications, research, and openings
+- `public/images/` — photos and figures
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for field definitions and examples.
+
+Lab name and mission statement are in `src/site.config.ts`.
+
+## Build
+
+```bash
+npm run build
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Deployment (GitHub Pages)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Push this repository to GitHub.
+2. Update `site` in `astro.config.mjs` to your final URL (e.g. `https://lab.example.edu` or `https://yourorg.github.io`).
+3. If using a **project site** (URL like `https://yourorg.github.io/repo-name/`), also set `base: '/repo-name/'`.
+4. In the repo **Settings → Pages**, set **Source** to **GitHub Actions**.
+5. Push to the `main` branch — the workflow in `.github/workflows/deploy.yml` builds and deploys automatically.
 
-Any static assets, like images, can be placed in the `public/` directory.
+For a custom domain, configure it under **Settings → Pages → Custom domain** after updating `site` in `astro.config.mjs`.
 
-## 🧞 Commands
+## Project structure
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```
+src/
+  content/          # Markdown content (edit here)
+  content.config.ts # Content schemas (do not edit unless adding fields)
+  layouts/          # Page shell
+  pages/            # Routes
+  components/       # Reusable UI
+  styles/           # Global CSS
+public/
+  images/           # Static images (edit here)
+```

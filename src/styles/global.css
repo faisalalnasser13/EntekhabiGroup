@@ -1,0 +1,450 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--accent: #0066cc;
+	--text: #1a1a1a;
+	--text-muted: #555;
+	--border: #e0e0e0;
+	--bg: #ffffff;
+	--max-width: 840px;
+}
+
+html {
+	font-family:
+		'Inter',
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		sans-serif;
+	line-height: 1.6;
+	color: var(--text);
+	background: var(--bg);
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+/* Header & Nav */
+
+.site-header {
+	padding: 2rem 0 1rem;
+	border-bottom: 1px solid var(--border);
+}
+
+.site-header .container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.site-title {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
+.site-title a {
+	color: var(--text);
+	text-decoration: none;
+}
+
+.site-title a:hover {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+.site-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 1.25rem;
+}
+
+.site-nav a {
+	color: var(--text-muted);
+	font-size: 0.95rem;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current='page'] {
+	color: var(--accent);
+}
+
+/* Main */
+
+main {
+	padding: 2.5rem 0 4rem;
+	min-height: 60vh;
+}
+
+/* Footer */
+
+.site-footer {
+	padding: 2rem 0;
+	border-top: 1px solid var(--border);
+	color: var(--text-muted);
+	font-size: 0.875rem;
+}
+
+.site-footer p {
+	margin: 0;
+}
+
+/* Hero */
+
+.hero {
+	margin-bottom: 3.5rem;
+}
+
+.hero-mission {
+	font-size: 1.35rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--text);
+	margin: 0;
+	max-width: 36rem;
+	animation: heroFadeIn 1.2s ease-out both;
+}
+
+.hero-bg {
+	position: relative;
+	padding: 2.5rem 0;
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
+
+.hero-bg::before {
+	content: '';
+	position: absolute;
+	inset: -50%;
+	background: radial-gradient(
+		ellipse at 30% 50%,
+		rgba(0, 102, 204, 0.06) 0%,
+		transparent 60%
+	);
+	animation: heroDrift 12s ease-in-out infinite alternate;
+	pointer-events: none;
+}
+
+@keyframes heroFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(0.5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes heroDrift {
+	from {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(5%, 3%);
+	}
+}
+
+/* Sections */
+
+.section-title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin: 0 0 1.5rem;
+	color: var(--text);
+}
+
+.page-title {
+	font-size: 1.75rem;
+	font-weight: 600;
+	margin: 0 0 2rem;
+	letter-spacing: -0.02em;
+}
+
+/* News */
+
+.news-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.news-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.news-item-header {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.news-item-date {
+	font-size: 0.875rem;
+	color: var(--text-muted);
+}
+
+.news-item-title {
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.news-item-image {
+	width: 100%;
+	max-width: 280px;
+	border-radius: 4px;
+}
+
+.news-item-body {
+	color: var(--text);
+}
+
+.news-item-body p:first-child {
+	margin-top: 0;
+}
+
+.news-item-body p:last-child {
+	margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+	.news-item:has(.news-item-image) {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		gap: 1.25rem;
+		align-items: start;
+	}
+
+	.news-item-header {
+		grid-column: 1 / -1;
+	}
+}
+
+/* People */
+
+.people-group {
+	margin-bottom: 2.5rem;
+}
+
+.people-group-title {
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0 0 1rem;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	font-size: 0.8rem;
+}
+
+.people-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+}
+
+@media (min-width: 500px) {
+	.people-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 768px) {
+	.people-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.person-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.person-photo {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 4px;
+	background: #f5f5f5;
+}
+
+.person-name {
+	font-weight: 600;
+	margin: 0;
+	font-size: 1rem;
+}
+
+.person-role {
+	font-size: 0.85rem;
+	color: var(--text-muted);
+	margin: 0;
+}
+
+.person-links {
+	display: flex;
+	gap: 0.75rem;
+	font-size: 0.85rem;
+}
+
+.person-bio {
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	margin: 0;
+}
+
+.person-bio p:first-child {
+	margin-top: 0;
+}
+
+.person-bio p:last-child {
+	margin-bottom: 0;
+}
+
+/* Research */
+
+.research-list {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.research-card {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.research-image {
+	width: 100%;
+	max-width: 400px;
+	border-radius: 4px;
+}
+
+.research-title {
+	font-size: 1.15rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.research-body p:first-child {
+	margin-top: 0;
+}
+
+.research-body p:last-child {
+	margin-bottom: 0;
+}
+
+/* Publications */
+
+.pub-year-group {
+	margin-bottom: 2rem;
+}
+
+.pub-year {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin: 0 0 1rem;
+}
+
+.pub-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.pub-item {
+	padding-bottom: 1.25rem;
+	border-bottom: 1px solid var(--border);
+}
+
+.pub-item:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.pub-title {
+	font-weight: 600;
+	margin: 0 0 0.25rem;
+}
+
+.pub-authors {
+	margin: 0;
+	color: var(--text-muted);
+	font-size: 0.95rem;
+}
+
+.pub-venue {
+	margin: 0.15rem 0 0;
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+.pub-links {
+	margin: 0.5rem 0 0;
+	display: flex;
+	gap: 1rem;
+	font-size: 0.9rem;
+}
+
+/* Prose (openings, etc.) */
+
+.prose h2 {
+	font-size: 1.15rem;
+	margin: 1.5rem 0 0.5rem;
+}
+
+.prose h2:first-child {
+	margin-top: 0;
+}
+
+.prose p {
+	margin: 0 0 1rem;
+}
+
+.prose ul {
+	margin: 0 0 1rem;
+	padding-left: 1.25rem;
+}
+
+.prose li {
+	margin-bottom: 0.35rem;
+}

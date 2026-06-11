@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="280" viewBox="0 0 500 280">
+  <rect width="500" height="280" fill="#e0eef8"/>
+  <path d="M0 200 Q125 160 250 200 T500 200 V280 H0 Z" fill="#0066cc" opacity="0.2"/>
+  <text x="250" y="140" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#555">Water Cycle</text>
+</svg>

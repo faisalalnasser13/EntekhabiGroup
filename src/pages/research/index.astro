@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { assetUrl } from '../../utils/url';
+import { getCollection, render } from 'astro:content';
+
+const research = await getCollection('research');
+const sorted = research.sort(
+	(a, b) => (a.data.order ?? 999) - (b.data.order ?? 999),
+);
+
+const rendered = await Promise.all(
+	sorted.map(async (entry) => {
+		const { Content } = await render(entry);
+		return { entry, Content };
+	}),
+);
+---
+
+<BaseLayout title="Research">
+	<h1 class="page-title">Research</h1>
+
+	<div class="research-list">
+		{
+			rendered.map(({ entry, Content }) => (
+				<article class="research-card">
+					{entry.data.image && (
+						<img
+							class="research-image"
+							src={assetUrl(entry.data.image)}
+							alt=""
+							loading="lazy"
+						/>
+					)}
+					<h2 class="research-title">{entry.data.title}</h2>
+					<div class="research-body">
+						<Content />
+					</div>
+				</article>
+			))
+		}
+	</div>
+</BaseLayout>

@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const publications = await getCollection('publications');
+
+const byYear = new Map<number, typeof publications>();
+for (const pub of publications) {
+	const year = pub.data.year;
+	if (!byYear.has(year)) {
+		byYear.set(year, []);
+	}
+	byYear.get(year)!.push(pub);
+}
+
+const years = [...byYear.keys()].sort((a, b) => b - a);
+---
+
+<BaseLayout title="Publications">
+	<h1 class="page-title">Publications</h1>
+
+	{
+		years.map((year) => (
+			<section class="pub-year-group">
+				<h2 class="pub-year">{year}</h2>
+				<ul class="pub-list">
+					{byYear.get(year)!.map((pub) => (
+						<li class="pub-item">
+							<p class="pub-title">{pub.data.title}</p>
+							<p class="pub-authors">{pub.data.authors}</p>
+							<p class="pub-venue">{pub.data.venue}</p>
+							{(pub.data.pdf || pub.data.code) && (
+								<p class="pub-links">
+									{pub.data.pdf && (
+										<a href={pub.data.pdf} target="_blank" rel="noopener noreferrer">
+											PDF
+										</a>
+									)}
+									{pub.data.code && (
+										<a href={pub.data.code} target="_blank" rel="noopener noreferrer">
+											Code
+										</a>
+									)}
+								</p>
+							)}
+						</li>
+					))}
+				</ul>
+			</section>
+		))
+	}
+</BaseLayout>

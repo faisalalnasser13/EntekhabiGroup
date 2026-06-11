@@ -1,0 +1,35 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import { ROLE_LABELS } from '../utils/people';
+import { assetUrl } from '../utils/url';
+
+interface Props {
+	entry: CollectionEntry<'people'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { name, role, photo, email, website } = entry.data;
+---
+
+<article class="person-card">
+	<img class="person-photo" src={assetUrl(photo)} alt={name} loading="lazy" />
+	<h3 class="person-name">{name}</h3>
+	<p class="person-role">{ROLE_LABELS[role]}</p>
+	{
+		(email || website) && (
+			<div class="person-links">
+				{email && <a href={`mailto:${email}`}>Email</a>}
+				{website && (
+					<a href={website} target="_blank" rel="noopener noreferrer">
+						Website
+					</a>
+				)}
+			</div>
+		)
+	}
+	<div class="person-bio">
+		<Content />
+	</div>
+</article>

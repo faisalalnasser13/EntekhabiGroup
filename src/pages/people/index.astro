@@ -1,0 +1,33 @@
+---
+import PersonCard from '../../components/PersonCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ROLE_LABELS, ROLE_ORDER } from '../../utils/people';
+import { getCollection } from 'astro:content';
+
+const people = await getCollection('people');
+
+const grouped = ROLE_ORDER.map((role) => ({
+	role,
+	label: ROLE_LABELS[role],
+	members: people
+		.filter((p) => p.data.role === role)
+		.sort((a, b) => a.data.order - b.data.order),
+})).filter((group) => group.members.length > 0);
+---
+
+<BaseLayout title="People">
+	<h1 class="page-title">People</h1>
+
+	{
+		grouped.map((group) => (
+			<section class="people-group">
+				<h2 class="people-group-title">{group.label}</h2>
+				<div class="people-grid">
+					{group.members.map((entry) => (
+						<PersonCard entry={entry} />
+					))}
+				</div>
+			</section>
+		))
+	}
+</BaseLayout>

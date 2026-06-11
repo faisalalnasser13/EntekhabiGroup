@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import { assetUrl } from '../utils/url';
+
+interface Props {
+	entry: CollectionEntry<'news'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const formattedDate = entry.data.date.toLocaleDateString('en-US', {
+	year: 'numeric',
+	month: 'long',
+	timeZone: 'UTC',
+});
+---
+
+<article class="news-item">
+	<div class="news-item-header">
+		<time class="news-item-date" datetime={entry.data.date.toISOString()}>
+			{formattedDate}
+		</time>
+		<h3 class="news-item-title">{entry.data.title}</h3>
+	</div>
+	{
+		entry.data.image && (
+			<img
+				class="news-item-image"
+				src={assetUrl(entry.data.image)}
+				alt=""
+				loading="lazy"
+			/>
+		)
+	}
+	<div class="news-item-body">
+		<Content />
+	</div>
+</article>

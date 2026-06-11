@@ -1,17 +1,32 @@
 ---
+import NewsItem from '../components/NewsItem.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../site.config';
+import { getCollection } from 'astro:content';
 
+const news = await getCollection('news');
+const sortedNews = news.sort(
+	(a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<section class="hero">
+		<div class="hero-bg">
+			<p class="hero-mission">{siteConfig.mission}</p>
+		</div>
+	</section>
+
+	<section>
+		<h2 class="section-title">Lab News</h2>
+		<ul class="news-list">
+			{
+				sortedNews.map((entry) => (
+					<li>
+						<NewsItem entry={entry} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</BaseLayout>

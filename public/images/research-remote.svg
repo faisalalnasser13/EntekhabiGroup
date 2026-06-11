@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="280" viewBox="0 0 500 280">
+  <rect width="500" height="280" fill="#e8f0e0"/>
+  <circle cx="250" cy="120" r="60" stroke="#0066cc" stroke-width="2" fill="none" opacity="0.4"/>
+  <circle cx="250" cy="120" r="90" stroke="#0066cc" stroke-width="1" fill="none" opacity="0.2"/>
+  <text x="250" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#555">Remote Sensing</text>
+</svg>
