@@ -10,7 +10,7 @@ alnasser:
   name: Faisal AlNasser
   title: PhD Student
   role: current
-  photo: /images/people/jane.jpg
+  photo: /images/person-phd.svg
   email: Alnasser@mit.edu
   website: https://example.edu/~jane
   order: 1
@@ -19,7 +19,7 @@ bowen:
   name: Bowen Wang
   title: PhD Student
   role: current
-  photo: /images/people/jane.jpg
+  photo: /images/person-phd.svg
   email: bowenw@mit.edu
   website: https://example.edu/~jane
   order: 1
@@ -28,9 +28,9 @@ bryn:
   name: Bryn E Morgan
   title: Postdoctoral Researcher
   role: current
-  photo: /images/people/jane.jpg
+  photo: /images/person-phd.svg
   email: bryn@example.edu
-  website: https://example.edu/~jane
+  website: https://example.edu/~
   order: 1
   bio: Bryn is a Postdoc and likes plants
 carlos-mendez:
@@ -78,7 +78,7 @@ gianotti:
   name: Daniel J. Short Gianotti
   title: Research Scientist
   role: current
-  photo: /images/people/jane.jpg
+  photo: /images/person-phd.svg
   email: jane@example.edu
   website: https://example.edu/~jane
   order: 1
@@ -135,7 +135,7 @@ mzhang:
   name: Michelle Zhang
   title: PhD Student
   role: current
-  photo: /images/people/jane.jpg
+  photo: /images/person-phd.svg
   email: mshzhang@mit.edu
   website: https://example.edu/~jane
   order: 1
@@ -148,19 +148,11 @@ nina-patel:
   website: https://example.edu/~npatel
   order: 2
   bio: PhD alumna (2023). Now a data scientist applying remote sensing to urban heat island studies.
-priya-mehta:
-  name: Priya Mehta
-  title: Master's Student
-  role: current
-  photo: /images/person-phd.svg
-  email: priya@example.edu
-  order: 4
-  bio: Master's student working on drought monitoring with multi-sensor remote sensing products.
 reguyal:
   name: Victoria Reguyal
   title: Undergraduate Researcher
   role: current
-  photo: /images/people/jane.jpg
+  photo: /images/person-phd.svg
   email: reguyal@mit.edu
   website: https://example.edu/~jane
   order: 1
@@ -173,14 +165,6 @@ robert-kim:
   website: https://example.edu/~rkim
   order: 4
   bio: Visiting scientist studying multi-modal weather forecasting with satellite and reanalysis data.
-sam-rivera:
-  name: Sam Rivera
-  title: PhD Student
-  role: current
-  photo: /images/person-phd.svg
-  email: sam@example.edu
-  order: 3
-  bio: PhD student studying land-atmosphere coupling and soil moisture dynamics using SMAP and model assimilation.
 sarah-ibrahim:
   name: Sarah Ibrahim
   title: Staff
@@ -197,11 +181,3 @@ tom-walsh:
   website: https://example.edu/~twalsh
   order: 6
   bio: External collaborator on scalable ground truthing methods for agricultural remote sensing.
-xinyi-tong:
-  name: Xin-Yi Tong
-  title: Postdoctoral Researcher
-  role: current
-  photo: /images/person-phd.svg
-  email: xinyi@example.edu
-  order: 2
-  bio: Postdoctoral researcher developing globally transferable crop mapping models from satellite imagery.
