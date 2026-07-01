@@ -1,6 +1,6 @@
 {
   "orcid": "0000-0002-8362-4761",
-  "fetchedAt": "2026-06-11T17:59:28.960Z",
+  "fetchedAt": "2026-07-01T09:49:37.479Z",
   "limit": 25,
   "publications": [
     {
@@ -68,6 +68,15 @@
     },
     {
       "title": "Meteorological to Agricultural Drought Transitions Compounded by Heat Waves in Historical and Future Climates",
+      "authors": "Short Gianotti, Daniel J, Gannon, Meriah J, Entekhabi, Dara",
+      "venue": "DSpace@MIT (Massachusetts Institute of Technology)",
+      "year": 2026,
+      "doi": null,
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7164981449"
+    },
+    {
+      "title": "Meteorological to Agricultural Drought Transitions Compounded by Heat Waves in Historical and Future Climates",
       "authors": "Daniel J. Short Gianotti, Meriah J. Gannon, Dara Entekhabi",
       "venue": "Water Resources Research",
       "year": 2026,
@@ -85,6 +94,15 @@
       "openalexId": "https://openalex.org/W7147327190"
     },
     {
+      "title": "Soil Moisture Impact on Convective Initiation",
+      "authors": "Faisal AlNasser, Daniel Gianotti, Dara Entekhabi",
+      "venue": "Water Resources Research",
+      "year": 2026,
+      "doi": "10.1029/2025wr042329",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7166193556"
+    },
+    {
       "title": "Vegetation water content mediates decoupling between leaf-out and rainfall onset in the African dry tropics",
       "authors": "Bryn Morgan, Dara Entekhabi",
       "venue": "",
@@ -92,6 +110,15 @@
       "doi": "10.5194/egusphere-egu26-14952",
       "source": "openalex",
       "openalexId": "https://openalex.org/W7135198262"
+    },
+    {
+      "title": "Vertical coherence dominates decadal land water storage change despite hydroclimatic extremes and groundwater pumping",
+      "authors": "Meng Zhao, Runze Zhang, Geruo A, Dara Entekhabi",
+      "venue": "",
+      "year": 2026,
+      "doi": "10.22541/essoar.15005246/v1",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7166224015"
     },
     {
       "title": "A global dataset of remote sensing-based soil critical point and permanent wilting point",
@@ -205,36 +232,6 @@
       "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024WR039855",
       "source": "openalex",
       "openalexId": "https://openalex.org/W4411654274"
-    },
-    {
-      "title": "Diurnal Vegetation Moisture Cycle in the Amazon and Response to Water Stress",
-      "authors": "Milad Asgarimehr, Dara Entekhabi, Adriano Camps",
-      "venue": "Geophysical Research Letters",
-      "year": 2024,
-      "doi": "10.1029/2024gl111462",
-      "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024GL111462",
-      "source": "openalex",
-      "openalexId": "https://openalex.org/W4403207915"
-    },
-    {
-      "title": "Diurnal Vegetation Moisture Cycle in the Amazon and Response to Water Stress",
-      "authors": "Milad Asgarimehr, Dara Entekhabi, Adriano Camps",
-      "venue": "",
-      "year": 2024,
-      "doi": "10.22541/essoar.172433768.83500449/v1",
-      "pdf": "https://gfzpublic.gfz-potsdam.de/pubman/item/item_5028073_2/component/file_5028289/5028073.pdf",
-      "source": "openalex",
-      "openalexId": "https://openalex.org/W4401759786"
-    },
-    {
-      "title": "Dust Source Areas and Their Plume Extent Derived From Satellite Data Fields",
-      "authors": "Faisal AlNasser, Abdelghani Chehbouni, Dara Entekhabi",
-      "venue": "Geophysical Research Letters",
-      "year": 2024,
-      "doi": "10.1029/2024gl110753",
-      "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024GL110753",
-      "source": "openalex",
-      "openalexId": "https://openalex.org/W4401808822"
     }
   ]
 }
