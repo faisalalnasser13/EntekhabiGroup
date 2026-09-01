@@ -1,6 +1,6 @@
 {
   "orcid": "0000-0002-8362-4761",
-  "fetchedAt": "2026-08-01T08:21:57.267Z",
+  "fetchedAt": "2026-09-01T11:14:23.102Z",
   "limit": 25,
   "publications": [
     {
@@ -20,6 +20,15 @@
       "doi": "10.1016/j.envsci.2026.104349",
       "source": "openalex",
       "openalexId": "https://openalex.org/W7133182823"
+    },
+    {
+      "title": "Comment on egusphere-2026-1594",
+      "authors": "Margulis, Steven A., Hildebrand, Maya, Xu, Xiaolan, Girotto, Manuela, Marshall, Hans-Peter, Shah, Rashmi, Deeb, Elias, Yueh, Simon, Entekhabi, Dara, Lundquist, Jessica",
+      "venue": "",
+      "year": 2026,
+      "doi": "10.5194/egusphere-2026-1594-rc1",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7163558259"
     },
     {
       "title": "Consistent Soil Moisture and Vegetation Optical Depth From Relatively Calibrated SMOS Brightness Temperatures With SMAP",
@@ -47,6 +56,33 @@
       "doi": "10.1029/2025wr040632",
       "source": "openalex",
       "openalexId": "https://openalex.org/W7153607229"
+    },
+    {
+      "title": "Data for \"Plant-stored water supports pre-rain green-up under seasonal water limitation across Africa\"",
+      "authors": "Morgan, Bryn, Entekhabi, Dara",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "year": 2026,
+      "doi": "10.5281/zenodo.21998701",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7203720985"
+    },
+    {
+      "title": "Data for \"Plant-stored water supports pre-rain green-up under seasonal water limitation across Africa\"",
+      "authors": "Morgan, Bryn, Entekhabi, Dara",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "year": 2026,
+      "doi": "10.5281/zenodo.21998700",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7203725274"
+    },
+    {
+      "title": "Evaluating Fire Indices for Fire Ignition and Spread Rate in the Western United States",
+      "authors": "B. Wang, A. P. Williams, D. Entekhabi, G. D. Madakumbura, D. Lettenmaier, J. K. Balch, S. Rahimi, L. Huang, A. Hall",
+      "venue": "Earth s Future",
+      "year": 2026,
+      "doi": "10.1029/2025ef007652",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7197050426"
     },
     {
       "title": "Integrating Satellite Retrievals, Numerical Models, and Machine Learning for Global Groundwater Recharge Estimation",
@@ -99,6 +135,7 @@
       "venue": "",
       "year": 2026,
       "doi": "10.5194/egusphere-2026-3250",
+      "pdf": "https://egusphere.copernicus.org/preprints/2026/egusphere-2026-3250/egusphere-2026-3250.pdf",
       "source": "openalex",
       "openalexId": "https://openalex.org/W7171850422"
     },
@@ -139,6 +176,15 @@
       "openalexId": "https://openalex.org/W7166193556"
     },
     {
+      "title": "Soil Moisture Retrieval For Dense Vegetation Considering Time-Varying First-Order Scattering From SMAP L-Band Dual-Polarized Brightness Temperatures",
+      "authors": "Jaese Lee, Simon Yueh, Dara Entekhabi, Andreas Colliander, Jungho Im, Chang-Hwan Park, Hyunglok Kim",
+      "venue": "SSRN Electronic Journal",
+      "year": 2026,
+      "doi": "10.2139/ssrn.7287481",
+      "source": "openalex",
+      "openalexId": "https://openalex.org/W7203528459"
+    },
+    {
       "title": "Supplementary material to \"Opposite-sign influences of canopy structural and physiological dynamics on water–carbon biogeography\"",
       "authors": "Daniel Short Gianotti, Dara Entekhabi",
       "venue": "",
@@ -167,24 +213,13 @@
       "openalexId": "https://openalex.org/W7166224015"
     },
     {
-      "title": "A global dataset of remote sensing-based soil critical point and permanent wilting point",
-      "authors": "Yawei Xu, Qing He, Hui Lu, Kun Yang, Dara Entekhabi, Daniel J. Short Gianotti",
-      "venue": "Scientific Data",
-      "year": 2025,
-      "doi": "10.1038/s41597-025-05048-y",
-      "pdf": "https://www.nature.com/articles/s41597-025-05048-y.pdf",
+      "title": "Vertical Coherence Dominates Decadal Land Water Storage Change Despite Hydroclimatic Extremes and Groundwater Pumping",
+      "authors": "Meng Zhao, Runze Zhang, Geruo A, Dara Entekhabi",
+      "venue": "Geophysical Research Letters",
+      "year": 2026,
+      "doi": "10.1029/2026gl122946",
       "source": "openalex",
-      "openalexId": "https://openalex.org/W4410010603"
-    },
-    {
-      "title": "Author Correction: No detectable trend in mid-latitude cold extremes during the recent period of Arctic amplification",
-      "authors": "Judah Cohen, Laurie Agel, Mathew Barlow, Dara Entekhabi",
-      "venue": "Communications Earth & Environment",
-      "year": 2025,
-      "doi": "10.1038/s43247-025-02217-0",
-      "pdf": "https://www.nature.com/articles/s43247-025-02217-0.pdf",
-      "source": "openalex",
-      "openalexId": "https://openalex.org/W4408970544"
+      "openalexId": "https://openalex.org/W7172381459"
     },
     {
       "title": "Evaluating Fire Indices for Fire Ignition and Spread Risk in the Western United States",
@@ -195,44 +230,6 @@
       "pdf": "https://essopenarchive.org/doi/pdf/10.22541/essoar.176296827.76595361/v1",
       "source": "openalex",
       "openalexId": "https://openalex.org/W4416203466"
-    },
-    {
-      "title": "Impact of L-band Vegetation Optical Depth Temporal Variation on Soil Moisture Retrieval",
-      "authors": "Andreas Colliander, Michael Cosh, Simon Kraatz, Laura Bourgeau-Chavez, Julian Chaubell, Xiaolan Xu, Vicky Kelly, Paul Siqueira, Kyle McDonald, Nick Steiner, Mehmet Kurum, Alexandre Roy, Aaron Berg, Cristina Vittucci, Leung Tsang, Dara Entekhabi, Simon Yueh",
-      "venue": "",
-      "year": 2025,
-      "doi": "10.5194/egusphere-egu25-7207",
-      "source": "openalex",
-      "openalexId": "https://openalex.org/W4408436560"
-    },
-    {
-      "title": "Relative Contributions of Surface Parcel and Atmospheric Environment to Convective Potential during Interstorm Periods",
-      "authors": "Michelle S. Zhang, David D. Turner, Dara Entekhabi",
-      "venue": "Journal of Hydrometeorology",
-      "year": 2025,
-      "doi": "10.1175/jhm-d-25-0045.1",
-      "source": "openalex",
-      "openalexId": "https://openalex.org/W4413430891"
-    },
-    {
-      "title": "Reply to: Observed warming of cold extremes is not captured with a fixed threshold definition",
-      "authors": "Judah Cohen, Laurie Agel, Mathew Barlow, Dara Entekhabi",
-      "venue": "Communications Earth & Environment",
-      "year": 2025,
-      "doi": "10.1038/s43247-025-02630-5",
-      "pdf": "https://www.nature.com/articles/s43247-025-02630-5.pdf",
-      "source": "openalex",
-      "openalexId": "https://openalex.org/W4414947311"
-    },
-    {
-      "title": "Spatiotemporal Patterns of Drought Migration Across the Contiguous United States",
-      "authors": "Amitesh Sabut, Ashok Mishra, Dara Entekhabi",
-      "venue": "Water Resources Research",
-      "year": 2025,
-      "doi": "10.1029/2024wr039855",
-      "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024WR039855",
-      "source": "openalex",
-      "openalexId": "https://openalex.org/W4411654274"
     }
   ]
 }
